@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "811391564322",
+    "project_id": "recotivapp",
+    "storage_bucket": "recotivapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811391564322:android:0398871676a2152ad7287b",
+        "android_client_info": {
+          "package_name": "com.example.recotivapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811391564322-vqvp6htgflc70on6p5c8qa6tt1no5mqg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.recotivapp",
+            "certificate_hash": "74a6a9aced8d4d5ff775e0cbfcf6ceca2d32ca6a"
+          }
+        },
+        {
+          "client_id": "811391564322-eloeqc9v2mmul8s9t0p2iiqvnnoqhvqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAe7QlihdCBw7LuQWYa8kqazJEK3U93OU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811391564322-eloeqc9v2mmul8s9t0p2iiqvnnoqhvqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

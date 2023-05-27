@@ -20,7 +20,7 @@ class splashscreen : AppCompatActivity() {
         setAnimation()
 
         Handler().postDelayed({
-            startActivity(Intent(this@splashscreen,MainActivity::class.java))
+            startActivity(Intent(this@splashscreen,LoginActivity::class.java))
         }, 5000)
     }
 

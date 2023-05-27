@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">recotivapp</string>
+    <string name="welcome">Silahkan login dulu</string>
+    <string name="sign_out">Log Out</string>
 </resources>
