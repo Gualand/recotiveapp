@@ -2,4 +2,10 @@
     <string name="app_name">recotivapp</string>
     <string name="welcome">Silahkan login dulu</string>
     <string name="sign_out">Log Out</string>
+    <string name="username">Fadhly Al-farizi</string>
+    <string name="subscriber">Jumlah Subscriber</string>
+    <string name="video">Jumlah Vidio</string>
+    <string name="view">Jumlah View</string>
+    <string name="interest">Kesukaan</string>
+    <string name="recommendation">Lihat Rekomendasi</string>
 </resources>
