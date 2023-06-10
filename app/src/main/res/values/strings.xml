@@ -8,4 +8,34 @@
     <string name="view">Jumlah View</string>
     <string name="interest">Kesukaan</string>
     <string name="recommendation">Lihat Rekomendasi</string>
+
+    <string name="channel_name">Nama Channel</string>
+    <string name="description">Deskripsi</string>
+    <string-array name="data_name">
+        <item>Deddy Corbuzier</item>
+        <item>Jeda Nulis</item>
+        <item>Nihongo Mantappu</item>
+        <item>Jess No Limit</item>
+        <item>Maudy Ayunda</item>
+        <item>Windah Basudara</item>
+        <item>GadgetIn </item>
+    </string-array>
+    <string-array name="data_description">
+        <item>#CLOSETHEDOOR PODCAST</item>
+        <item>Saya penulis muda tentang tema keislaman di media massa sejak lebih 10 tahun lalu. Saat ini, sembari terus menulis, di saat jeda, saya bikin video tentang Islam yang adem. Karena saat ini, khususnya generasi millenial, penyampaian melalui video lebih diminati. Sekalian agar saya bisa mengekspresikan gagasan saya secara lebih leluasa dengan media visual.</item>
+        <item>Minasan, Konnijiwa!! Namaku Jerome Polin, dan di channel ini aku ingin membagikan banyak hal seputar hidupku, matematika, Jepang, budaya, dll! Semoga bisa mendapatkan manfaat dari konten-konten Nihongo Mantappu yah! Mantappu Jiwa!</item>
+        <item>Do the best and let God do the rest :)</item>
+        <item>Hi! Maudy Ayunda here. Welcome to my very own, personal Youtube channel - let’s learn, think, and laugh together on this channel! Subscribe and turn on notifications so that you don’t miss any of my videos ❤</item>
+        <item>KITA MAIN GAME YUK!</item>
+        <item>Channel ini khusus membahas gadget-gadget dalam bahasa Indonesia.</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/deddy</item>
+        <item>@drawable/jedanulis</item>
+        <item>@drawable/jerome</item>
+        <item>@drawable/jess</item>
+        <item>@drawable/maudy</item>
+        <item>@drawable/windah</item>
+        <item>@drawable/gadgedin</item>
+    </integer-array>
 </resources>
