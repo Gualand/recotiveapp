@@ -1,20 +1,21 @@
 {
   "project_info": {
-    "project_number": "811391564322",
-    "project_id": "recotivapp",
-    "storage_bucket": "recotivapp.appspot.com"
+    "project_number": "965498668509",
+    "firebase_url": "https://capstone-recotive-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "capstone-recotive",
+    "storage_bucket": "capstone-recotive.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:811391564322:android:0398871676a2152ad7287b",
+        "mobilesdk_app_id": "1:965498668509:android:9f9d53c41a56e050eca234",
         "android_client_info": {
           "package_name": "com.example.recotivapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "811391564322-vqvp6htgflc70on6p5c8qa6tt1no5mqg.apps.googleusercontent.com",
+          "client_id": "965498668509-blpaf3risc8fdktmvvjbrada8qblbm0f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.recotivapp",
@@ -22,20 +23,20 @@
           }
         },
         {
-          "client_id": "811391564322-eloeqc9v2mmul8s9t0p2iiqvnnoqhvqu.apps.googleusercontent.com",
+          "client_id": "965498668509-onbfdamhespl6hsnr3arft2tlibfq52c.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCAe7QlihdCBw7LuQWYa8kqazJEK3U93OU"
+          "current_key": "AIzaSyAyk84QylwjSKH9DX4dag6RBxPrUH815zU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "811391564322-eloeqc9v2mmul8s9t0p2iiqvnnoqhvqu.apps.googleusercontent.com",
+              "client_id": "965498668509-onbfdamhespl6hsnr3arft2tlibfq52c.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
