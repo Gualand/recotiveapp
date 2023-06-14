@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+<!--Ini untuk Gambar-->
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleImageView"
             android:layout_width="match_parent"
@@ -18,7 +19,9 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/photo" />
 
+<!--Ini untuk Nama-->
         <TextView
+            android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fontFamily="@font/poppins"
@@ -27,118 +30,63 @@
             android:layout_marginTop="20dp"
             android:textSize="28sp"
             android:textAllCaps="true"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_below="@+id/circleImageView" />
 
-        <TableLayout
+<!--Ini awal form-->
+        <TextView
+            android:id="@+id/tvData"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp">
+            android:layout_height="match_parent"
+            android:text="@string/fillData"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/tvName" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtJudul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Judul Vidio Anda"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/tvData" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="@string/subscriber"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Jumlah View Vidio Anda"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:layout_below="@+id/edtJudul" />
 
-                <TextView
-                    android:id="@+id/tv_item_subs"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/poppins"
-                    android:text="1.543.234"
-                    android:layout_weight="1"/>
-            </TableRow>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtInterest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Masukan Konten Kesukaanmu"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@+id/edtView" />
+<!--Ini akhir form--> 
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/poppins"
-                    android:text="@string/video" />
-
-                <TextView
-                    android:id="@+id/tv_item_video"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="17"
-                    android:fontFamily="@font/poppins"
-                    android:textSize="14sp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/poppins"
-                    android:text="@string/view" />
-
-                <TextView
-                    android:id="@+id/tv_item_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="143.648.008"
-                    android:fontFamily="@font/poppins"
-                    android:textSize="14sp" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/poppins"
-                    android:text="@string/interest" />
-
-                <TextView
-                    android:id="@+id/tv_item_interest"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/poppins"
-                    android:text="Self improvement"
-                    android:textSize="14sp" />
-            </TableRow>
-        </TableLayout>
-
+<!--Ini untuk button rekomendasi-->
         <Button
             android:id="@+id/btn_recommendation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins"
-            android:text="@string/recommendation" />
+            android:text="@string/recommendation"
+            android:layout_below="@+id/edtInterest"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 </ScrollView>
