@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import com.bumptech.glide.Glide
 import com.example.recotivapp.databinding.ActivityMainBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -42,6 +43,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             finish()
             return
         }
+        else {
+            firebaseUser.let {
+                val name = it.displayName
+                val photoUrl = it.photoUrl
+
+                binding.tvName.text = name
+                Glide.with(this).load(photoUrl).into(binding.circleImageView)
+            }
+        }
+
+
     }
 
     override fun onClick(v:View){
