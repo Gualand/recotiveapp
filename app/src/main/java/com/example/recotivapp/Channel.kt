@@ -5,7 +5,10 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class Channel(
-    val name: String,
-    val description: String,
-    val photo: Int
+    val judul: String,
+    val namaChannel: String,
+    val subscriber: String,
+    val link: String,
+    val view: String,
+    val like: String
 ) : Parcelable

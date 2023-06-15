@@ -27,12 +27,16 @@ class RecommendationActivity : AppCompatActivity() {
     }
 
     private fun getListChannel(): ArrayList<Channel> {
-        val dataName = resources.getStringArray(R.array.data_name)
-        val dataDescription = resources.getStringArray(R.array.data_description)
-        val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
+        val dataName = resources.getStringArray(R.array.data_judul)
+        val dataChannel = resources.getStringArray(R.array.data_channel)
+        val dataSubscriber = resources.getStringArray(R.array.data_subscriber)
+        val dataLink = resources.getStringArray(R.array.data_link)
+        val dataView = resources.getStringArray(R.array.data_view)
+        val dataLike = resources.getStringArray(R.array.data_like)
+
         val listChannel = ArrayList<Channel>()
         for (i in dataName.indices) {
-            val hero = Channel(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+            val hero = Channel(dataName[i], dataChannel[i], dataSubscriber[i], dataLink[i], dataView[i], dataLike[i])
             listChannel.add(hero)
         }
         return listChannel

@@ -75,7 +75,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppins"
             android:layout_below="@+id/edtView" />
-<!--Ini akhir form--> 
+<!--Ini akhir form-->
 
 <!--Ini untuk button rekomendasi-->
         <Button

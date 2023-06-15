@@ -17,15 +17,21 @@ class ListChannelAdapter(private val listChannel: ArrayList<Channel>) : Recycler
     override fun getItemCount(): Int = listChannel.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, description, photo) = listChannel[position]
-        holder.imgPhoto.setImageResource(photo)
-        holder.tvName.text = name
-        holder.tvDescription.text = description
+        val (judul, namaChannel, subscriber, linkUrl, view, like) = listChannel[position]
+        holder.tvJudul.text = judul
+        holder.tvNamaChannel.text = namaChannel
+        holder.tvSubs.text = subscriber
+        holder.tvLink.text = linkUrl
+        holder.tvView.text = view
+        holder.tvLike.text = like
     }
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
-        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+        val tvJudul: TextView = itemView.findViewById(R.id.tv_hasilJudul)
+        val tvNamaChannel: TextView = itemView.findViewById(R.id.tv_namaChannel)
+        val tvSubs: TextView = itemView.findViewById(R.id.tv_subscriber)
+        val tvLink: TextView = itemView.findViewById(R.id.tv_hasilLink)
+        val tvView: TextView = itemView.findViewById(R.id.tv_hasilView)
+        val tvLike: TextView = itemView.findViewById(R.id.tv_hasilLike)
     }
 }

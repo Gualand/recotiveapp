@@ -12,31 +12,47 @@
 
     <string name="channel_name">Nama Channel</string>
     <string name="description">Deskripsi</string>
-    <string-array name="data_name">
-        <item>Deddy Corbuzier</item>
-        <item>Jeda Nulis</item>
-        <item>Nihongo Mantappu</item>
-        <item>Jess No Limit</item>
-        <item>Maudy Ayunda</item>
+
+
+    <string-array name="data_judul">
+        <item>GAMERS JUGA OLAHRAGA KEMBALI!</item>
+        <item>KITA DIKEJAR BOXY BOO DI PABRIK! PROJECT: PLAYTIME</item>
+        <item>Review Hero Terbaru Arlott - Mobile Legends</item>
+        <item>5 Kesalahan INITIATOR di VALORANT</item>
+    </string-array>
+
+    <string-array name="data_channel">
         <item>Windah Basudara</item>
-        <item>GadgetIn </item>
+        <item>Windah Basudara</item>
+        <item>Jess No Limit</item>
+        <item>Uler Sakti</item>
     </string-array>
-    <string-array name="data_description">
-        <item>#CLOSETHEDOOR PODCAST</item>
-        <item>Saya penulis muda tentang tema keislaman di media massa sejak lebih 10 tahun lalu. Saat ini, sembari terus menulis, di saat jeda, saya bikin video tentang Islam yang adem. Karena saat ini, khususnya generasi millenial, penyampaian melalui video lebih diminati. Sekalian agar saya bisa mengekspresikan gagasan saya secara lebih leluasa dengan media visual.</item>
-        <item>Minasan, Konnijiwa!! Namaku Jerome Polin, dan di channel ini aku ingin membagikan banyak hal seputar hidupku, matematika, Jepang, budaya, dll! Semoga bisa mendapatkan manfaat dari konten-konten Nihongo Mantappu yah! Mantappu Jiwa!</item>
-        <item>Do the best and let God do the rest :)</item>
-        <item>Hi! Maudy Ayunda here. Welcome to my very own, personal Youtube channel - let’s learn, think, and laugh together on this channel! Subscribe and turn on notifications so that you don’t miss any of my videos ❤</item>
-        <item>KITA MAIN GAME YUK!</item>
-        <item>Channel ini khusus membahas gadget-gadget dalam bahasa Indonesia.</item>
+
+    <string-array name="data_subscriber">
+        <item>10,7 Juta</item>
+        <item>10,7 Juta</item>
+        <item>28.132,909</item>
+        <item>56.134</item>
     </string-array>
-    <integer-array name="data_photo">
-        <item>@drawable/deddy</item>
-        <item>@drawable/jedanulis</item>
-        <item>@drawable/jerome</item>
-        <item>@drawable/jess</item>
-        <item>@drawable/maudy</item>
-        <item>@drawable/windah</item>
-        <item>@drawable/gadgedin</item>
-    </integer-array>
+
+    <string-array name="data_link">
+        <item>https://youtu.be/Rzavb-sxefk</item>
+        <item>https://youtu.be/lJKlU8Az9zk</item>
+        <item>https://youtu.be/ZQcu7PYWo5M</item>
+        <item>https://youtu.be/6gIX8K3aipk</item>
+    </string-array>
+
+    <string-array name="data_view">
+        <item>2.546.099</item>
+        <item>557.897</item>
+        <item>1.245.389</item>
+        <item>19.965</item>
+    </string-array>
+
+    <string-array name="data_like">
+        <item>159.908</item>
+        <item>16.456</item>
+        <item>30.658</item>
+        <item>957</item>
+    </string-array>
 </resources>
