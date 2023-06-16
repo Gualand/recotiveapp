@@ -45,173 +45,181 @@
             android:fontFamily="@font/poppins"
             android:layout_below="@+id/tvName" />
 
-        <TableLayout
-            android:id="@+id/column"
+        <HorizontalScrollView
+            android:id="@+id/scrv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="match_parent"
             android:layout_below="@+id/tvData">
 
-            <TableRow
+            <TableLayout
+                android:id="@+id/column"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/tvData">
 
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Film" />
-                <CheckBox
-                    android:id="@+id/checkBox2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vehicles" />
-                <CheckBox
-                    android:id="@+id/checkBox3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Music" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Film" />
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicles" />
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Music" />
+                </TableRow>
 
-                <CheckBox
-                    android:id="@+id/checkBox4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pets And Animals" />
-                <CheckBox
-                    android:id="@+id/checkBox5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sports" />
-                <CheckBox
-                    android:id="@+id/checkBox6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Movies" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Travel" />
-                <CheckBox
-                    android:id="@+id/checkBox8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Gaming" />
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Blogs" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pets And Animals" />
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sports" />
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Movies" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkBox10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Comedy" />
-                <CheckBox
-                    android:id="@+id/checkBox11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Entertainment" />
-                <CheckBox
-                    android:id="@+id/checkBox12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Politics" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Travel" />
+                    <CheckBox
+                        android:id="@+id/checkBox8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gaming" />
+                    <CheckBox
+                        android:id="@+id/checkBox9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blogs" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkBox13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Style" />
-                <CheckBox
-                    android:id="@+id/checkBox14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Education" />
-                <CheckBox
-                    android:id="@+id/checkBox15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Technology" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comedy" />
+                    <CheckBox
+                        android:id="@+id/checkBox11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entertainment" />
+                    <CheckBox
+                        android:id="@+id/checkBox12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Politics" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkBox16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Activism" />
-                <CheckBox
-                    android:id="@+id/checkBox17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Movies" />
-                <CheckBox
-                    android:id="@+id/checkBox18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Anime" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Style" />
+                    <CheckBox
+                        android:id="@+id/checkBox14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education" />
+                    <CheckBox
+                        android:id="@+id/checkBox15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Technology" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkBox19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Adventure" />
-                <CheckBox
-                    android:id="@+id/checkBox20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Comedy" />
-                <CheckBox
-                    android:id="@+id/checkBox21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Documentary" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/checkBox16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Activism" />
+                    <CheckBox
+                        android:id="@+id/checkBox17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Movies" />
+                    <CheckBox
+                        android:id="@+id/checkBox18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anime" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <CheckBox
-                    android:id="@+id/checkBox22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Family" />
-                <CheckBox
-                    android:id="@+id/checkBox23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Trailers" />
-            </TableRow>
-        </TableLayout>
-<!--Ini akhir form-->
+                    <CheckBox
+                        android:id="@+id/checkBox19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adventure" />
+                    <CheckBox
+                        android:id="@+id/checkBox20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comedy" />
+                    <CheckBox
+                        android:id="@+id/checkBox21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Documentary" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/checkBox22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Family" />
+                    <CheckBox
+                        android:id="@+id/checkBox23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trailers" />
+                </TableRow>
+            </TableLayout>
+            <!--Ini akhir form-->
+        </HorizontalScrollView>
+
 
 <!--Ini untuk button rekomendasi-->
         <Button
@@ -222,7 +230,7 @@
             android:layout_marginTop="12dp"
             android:fontFamily="@font/poppins"
             android:text="@string/recommendation"
-            android:layout_below="@+id/column"/>
+            android:layout_below="@+id/scrv"/>
 
     </RelativeLayout>
 </ScrollView>

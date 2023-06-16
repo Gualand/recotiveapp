@@ -2,44 +2,44 @@ package com.example.recotivapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.recotivapp.api.APIConfig
+import com.example.recotivapp.databinding.ActivityRecommendationBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+
 
 class RecommendationActivity : AppCompatActivity() {
-    private lateinit var rvChannel: RecyclerView
-    private val list = ArrayList<Channel>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recommendation)
+        private lateinit var binding: ActivityRecommendationBinding
 
-        rvChannel = findViewById(R.id.rv_channel)
-        rvChannel.setHasFixedSize(true)
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            binding = ActivityRecommendationBinding.inflate(layoutInflater)
+            setContentView(binding.root)
 
-        list.addAll(getListChannel())
-        showRecyclerList()
-    }
+            APIConfig.getService().getBreeds().enqueue(object : Callback<ResponseChannel> {
+                override fun onResponse(call: Call<ResponseChannel>, response: Response<ResponseChannel>) {
+                    if (response.isSuccessful) {
+                        val responseChannel = response.body()
+                        val dataItem = responseChannel?.data
+                        val adapterCat = AdapterChannel(dataItem)
+                        binding.rvChannel.apply {
+                            layoutManager = LinearLayoutManager(this@RecommendationActivity)
+                            setHasFixedSize(true)
+                            adapterCat.notifyDataSetChanged()
+                            adapter = adapterCat
+                        }
+                    }
+                }
 
-    private fun showRecyclerList() {
-        rvChannel.layoutManager = LinearLayoutManager(this)
-        val listChannelAdapter = ListChannelAdapter(list)
-        rvChannel.adapter = listChannelAdapter
-    }
+                override fun onFailure(call: Call<ResponseChannel>, t: Throwable) {
+                    Toast.makeText(applicationContext, "Data not Found", Toast.LENGTH_SHORT).show()
+                }
 
-    private fun getListChannel(): ArrayList<Channel> {
-        val dataName = resources.getStringArray(R.array.data_judul)
-        val dataChannel = resources.getStringArray(R.array.data_channel)
-        val dataSubscriber = resources.getStringArray(R.array.data_subscriber)
-        val dataLink = resources.getStringArray(R.array.data_link)
-        val dataView = resources.getStringArray(R.array.data_view)
-        val dataLike = resources.getStringArray(R.array.data_like)
-
-        val listChannel = ArrayList<Channel>()
-        for (i in dataName.indices) {
-            val hero = Channel(dataName[i], dataChannel[i], dataSubscriber[i], dataLink[i], dataView[i], dataLike[i])
-            listChannel.add(hero)
+            })
         }
-        return listChannel
     }
-
-}
